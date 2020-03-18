@@ -14,7 +14,7 @@ export default class Bomb extends React.Component {
 	}
 
 	render() {
-		// this.decrement()
+		setInterval(this.decrement, 3000)
 		return(
 		<div><h2>{this.state.secondsLeft <= 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`}</h2></div>
 		)
